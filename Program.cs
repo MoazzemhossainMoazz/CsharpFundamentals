@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CsharpFundamentals.Math;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,12 +21,15 @@ namespace CsharpFundamentals
         {
             static void Main(string[] args)
             {
-                Person male = new Person();
+                var male = new Person();
 
                 male.firstName = "John";
                 male.lastName = "Doe";
 
                 male.Introduce();
+
+                var result = Calculator.Add(13, 27);
+                Console.WriteLine(result);
             }
         }
     }
